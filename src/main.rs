@@ -7,7 +7,7 @@ fn read_file(filename: &str) -> String {
 }
 
 fn string_to_array(string: String) -> Vec<i32> {
-    let numbers = string.split(" ").map(|number| number.parse::<i32>().unwrap()).map(|number| number).collect();
+    let numbers = string.split(" ").map(|number| number.parse::<i32>().unwrap()).collect();
 
     return numbers;
 }
